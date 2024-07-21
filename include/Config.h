@@ -1,0 +1,1 @@
+#define __CONFIG_APP__ 1
