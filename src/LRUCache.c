@@ -33,8 +33,8 @@ void LRUCache_init() {
  */
 void LRUCache_access(uint32_t addr) {
   // 总事务请求次数增加
-  if((addr >= 0x30000000) && (addr <= 0x40000000)) return;
   RequestCnt++;
+  if((addr >= 0x30000000) && (addr <= 0x40000000)) return;
   // 划分域
   uint32_t tag    = extract(addr, 31                                , CacheLineSizeLog2 + SetNumLog2);
   uint32_t setidx = extract(addr, CacheLineSizeLog2 + SetNumLog2 - 1, CacheLineSizeLog2             );
