@@ -1,4 +1,4 @@
-SRC = src/main.c src/LRUCache.c src/Common.c
+SRC = src/main.c src/LRUCache.c src/Common.c src/DSE.c
 
 BUILD_DIR = ./build
 
